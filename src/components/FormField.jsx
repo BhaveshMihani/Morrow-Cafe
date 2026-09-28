@@ -10,7 +10,7 @@ export default function FormField({ id, label, error, prefix, disabled, ...input
         }`}
       >
         {prefix && (
-          <span className="flex items-center border-r border-coffee/20 bg-cream-deep/70 px-4 text-sm font-semibold text-muted" aria-hidden="true">
+          <span className="flex items-center border-r border-coffee/20 bg-cream-deep/70 px-4 font-subheading text-xs font-normal uppercase tracking-[0.18em] text-muted" aria-hidden="true">
             {prefix}
           </span>
         )}
@@ -19,11 +19,11 @@ export default function FormField({ id, label, error, prefix, disabled, ...input
           readOnly={disabled}
           aria-invalid={error ? 'true' : 'false'}
           aria-describedby={error ? errorId : undefined}
-          className="h-full w-full bg-transparent px-4 text-base text-ink placeholder:text-muted/60 focus:outline-none"
+          className="h-full w-full bg-transparent px-4 font-sans text-base text-ink placeholder:text-muted/60 focus:outline-none"
           {...inputProps}
         />
       </div>
-      <p id={errorId} className="min-h-[1.25rem] pt-1.5 text-[13px] font-medium text-alert" role={error ? 'alert' : undefined}>
+      <p id={errorId} className="min-h-[1.25rem] pt-1.5 font-sans text-[13px] font-normal text-alert" role={error ? 'alert' : undefined}>
         {error}
       </p>
     </div>

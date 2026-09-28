@@ -34,8 +34,8 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p data-hero="text" className="mt-7 max-w-md text-base leading-relaxed text-muted">
-            A little something from Morrow Café. Claim your <strong className="font-semibold text-ink">₹150 credit</strong> and bring it with you next time.
+          <p data-hero="text" className="mt-7 max-w-md font-sans text-base leading-relaxed text-muted">
+            A little something from Morrow Café. Claim your <strong className="font-bold text-ink">₹150 credit</strong> and bring it with you next time.
           </p>
 
           <a data-hero="text" href="#claim" className="btn-primary mt-8 lg:max-w-sm">

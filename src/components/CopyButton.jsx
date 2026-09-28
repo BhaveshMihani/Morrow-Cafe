@@ -48,7 +48,7 @@ export default function CopyButton({ text, codeId }) {
       <button type="button" onClick={handleCopy} className="btn-primary justify-center">
         {state === 'copied' ? 'Copied ✓' : 'Copy code'}
       </button>
-      <p role="status" className="mt-3 min-h-[1.25rem] text-[13px] text-muted">
+      <p role="status" className="mt-3 min-h-[1.25rem] font-sans text-[13px] text-muted">
         {state === 'copied' && 'Code copied to clipboard.'}
         {state === 'failed' && 'Couldn’t copy automatically. The code is selected, press Ctrl/⌘ + C.'}
       </p>

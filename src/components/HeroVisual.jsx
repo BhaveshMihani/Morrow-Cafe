@@ -43,7 +43,7 @@ export default function HeroVisual({ progress, reduced }) {
             decoding="async"
             className="h-full w-full object-cover"
           />
-          <p className="absolute bottom-4 left-4 rounded-full bg-cream/90 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink backdrop-blur-sm">
+          <p className="absolute bottom-4 left-4 rounded-full bg-cream/90 px-4 py-2 font-subheading text-[10px] font-normal uppercase tracking-[0.2em] text-ink backdrop-blur-sm">
             Morrow Café · Sec 104
           </p>
         </div>

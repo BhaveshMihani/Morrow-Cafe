@@ -45,7 +45,7 @@ export default function PauseSection() {
             Morrow Café is a place to pause, meet, and stay a little longer.
           </Reveal>
           <Reveal delay={0.22} className="mt-8">
-            <p className="inline-block rounded-full border border-dashed border-coffee/40 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-coffee">
+            <p className="inline-block rounded-full border border-dashed border-coffee/40 px-5 py-2.5 font-subheading text-[11px] font-normal uppercase tracking-[0.22em] text-coffee">
               Morrow Café — Sector 104 · Noida
             </p>
           </Reveal>

@@ -13,8 +13,9 @@ export default {
         alert: '#8A3324',
       },
       fontFamily: {
-        display: ['Coolvetica', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-        sans: ['Poppins', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        display: ['"Playfair Display"', 'Playfair', 'Georgia', 'serif'],
+        subheading: ['Montserrat', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
       },
     },
   },

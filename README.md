@@ -67,8 +67,7 @@ On a 390×844 phone the first viewport shows the masthead, the eyebrow line, a v
 - **Monitoring:** track claim success/failure rate and latency, with alerts when the error rate spikes.
 
 ## 18. Time spent
-_Fill in your actual time._
-
+Approx 1.5 - 2.5 Hours 
 ## 19. Deployment
 ```bash
 npm install
