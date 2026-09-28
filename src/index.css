@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Coolvetica is a licensed display face, so it is not bundled.
+  Drop Coolvetica.woff2 into /public/fonts/ and it is picked up automatically.
+  Until then the display stack falls back to Helvetica Neue / Arial (see tailwind.config.js).
+*/
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('Coolvetica'), local('Coolvetica Rg'), url('/fonts/Coolvetica.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid #59634a;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .display {
+    @apply font-display font-normal uppercase leading-[0.9] tracking-[-0.04em];
+    font-synthesis: none; /* Coolvetica ships one weight: never fake a bold */
+  }
+  .eyebrow {
+    @apply text-[11px] font-medium uppercase tracking-[0.2em];
+  }
+  .btn-primary {
+    @apply inline-flex h-14 w-full items-center justify-between rounded-2xl bg-ink px-6 text-[13px] font-semibold uppercase tracking-[0.12em] text-cream transition-colors duration-200 hover:bg-coffee disabled:cursor-not-allowed disabled:bg-ink/70;
+  }
+}
